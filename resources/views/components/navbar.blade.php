@@ -67,7 +67,7 @@
               <i class="bi bi-person-circle fs-3"></i>
             </button>
             @if (Auth::user() && Auth::user()->is_revisor)
-            @if (App\Models\Announcement::toBeRevisionedCount() > 0)  
+            @if (App\Models\Announcement::toBeRevisionedCount() > 0)
             <span class="badge_person translate-middle badge rounded-pill bg-danger">
               {{App\Models\Announcement::toBeRevisionedCount()}}
             </span>
@@ -87,6 +87,9 @@
               @endguest
 
               @auth
+              <li class="nav-item ps-4 border-bottom">
+                <a class="nav-link my-2 position-relative  link_custom" aria-current="page" href="{{route('profil')}}">Profilo</a>
+              </li>
               <li class="nav-item"><form
                 class="d-flex"
                 method="POST"

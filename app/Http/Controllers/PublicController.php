@@ -11,9 +11,13 @@ class PublicController extends Controller
     }
 
     public function setlocale($lang){
-      
+
         session()->put('locale', $lang);
         return redirect()->back();
 
+    }
+
+    public function indexProfil() {
+        return view('revisor.profil');
     }
 }

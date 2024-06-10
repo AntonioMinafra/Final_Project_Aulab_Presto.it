@@ -46,4 +46,4 @@ Route::get('rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->
 Route::post('lingua/{lang}', [PublicController::class, 'setLocale'])->name('set.locale');
 
 // rotta profilo
-Route::get('profil', [PublicController::class, 'indexProfil'])->name('profil');
+Route::get('/profil', [PublicController::class, 'indexProfil'])->name('profil');

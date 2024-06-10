@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PublicController extends Controller
 {
@@ -18,6 +20,9 @@ class PublicController extends Controller
     }
 
     public function indexProfil() {
-        return view('revisor.profil');
+
+    $user = Auth::user();
+
+        return view('revisor.profil', compact('user'));
     }
 }

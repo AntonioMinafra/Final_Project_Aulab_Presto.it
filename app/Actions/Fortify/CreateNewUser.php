@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
+use Illuminate\Http\UploadedFile;
 
 class CreateNewUser implements CreatesNewUsers
 {
@@ -31,10 +32,19 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
         ])->validate();
 
+        // Controlla se è stata fornita un'immagine
+        if (isset($input['img']) && $input['img'] instanceof UploadedFile) {
+            $imgPath = $input['img']->store('public/storage');
+        } else {
+            // Imposta l'immagine predefinita se non è stata fornita un'immagine
+            $imgPath = 'profil-defaul.jpeg';
+        }
+
         return User::create([
             'name' => $input['name'],
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
+            'img' => $imgPath
         ]);
     }
 }

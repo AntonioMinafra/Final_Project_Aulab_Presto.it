@@ -3,7 +3,7 @@
         <div class="row justify-content-center align-items-center ">
             <h3 class="display-3 text-center">{{$user->name}}</h3>
             <div class="col-3">
-                <img class="rounded-circle img-fluid" src="{{Storage::url('public/img/profil-defaul.jpeg')}}" alt="">
+                <img class="rounded-circle img-fluid" src="{{ $user->img ? Storage::url($user->img) : Storage::url('public/img/profil-defaul.jpeg') }}" alt="">
             </div>
             <div class="col-4">
                 <div class="ms-5">

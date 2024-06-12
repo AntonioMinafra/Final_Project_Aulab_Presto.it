@@ -1,11 +1,11 @@
 <x-layout>
-  
-  
+
+
   <div class="container mt-5 form_dati">
     <div class="row justify-content-center">
       <div class="col-12 col-md-6">
         <h2 class="my_title text-center mb-3">{{__('ui.register2')}}</h2>
-        <form class="p-3 shadow" method="post" action="{{route('register')}}">
+        <form class="p-3 shadow" method="post" action="{{route('register')}}" enctype="multipart/form-data">
           @csrf
           <div class="mb-3">
             <label for="email" class="form-label">{{__('ui.email')}}*</label>
@@ -14,6 +14,10 @@
           <div class="mb-3">
             <label for="nome" class="form-label">{{__('ui.name')}}*</label>
             <input type="text" name="name" class="form-control shadow form_bordi" id="nome">
+          </div>
+          <div class="mb-3">
+            <label for="img" class="form-label"><i class="bi fs-4 photo-video bi-image-fill"></i> Aggiungi immagine profilo</label>
+            <input type="file" name="img" class="form-control" id="img">
           </div>
           <div class="mb-3">
             <label for="password_confirmation" class="form-label">Password*</label>
@@ -29,6 +33,6 @@
       </div>
     </div>
   </div>
-  
-  
+
+
 </x-layout>

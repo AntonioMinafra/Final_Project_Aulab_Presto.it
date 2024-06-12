@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Announcement;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -23,6 +24,8 @@ class PublicController extends Controller
 
     $user = Auth::user();
 
-        return view('revisor.profil', compact('user'));
+    $announcements = Announcement::all();
+
+        return view('revisor.profil', compact('user', 'announcements'));
     }
 }

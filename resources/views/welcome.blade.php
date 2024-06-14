@@ -7,10 +7,10 @@
         {{ session('access.denied') }}
     </div>
     @endif
-
+    @auth
     <div class="container my-5">
-        <div class="row justify-content-end ">
-            <div class="col">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
                 <a href="{{route('profil')}}">
                     <button class="btn btn-dark ">
                         Profilo
@@ -19,6 +19,7 @@
             </div>
         </div>
     </div>
+    @endauth
 
     <x-message/>
 

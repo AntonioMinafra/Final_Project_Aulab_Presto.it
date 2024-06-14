@@ -19,23 +19,14 @@ class UserSeeder extends Seeder
                 'name' => 'Antonio',
                 'email' => 'antonio@mail',
                 'password' => Hash::make('12345678'),
+                'is_revisor' => true,
+                'img' => 'public/img/img_anto.jpeg'
             ],
             [
-                'name' => 'Emanuele',
-                'email' => 'emanuele@mail',
-                'password' => Hash::make('12345678'),
-                'is_revisor' => true
-            ],
-            [
-                'name' => 'Giuseppe',
-                'email' => 'giuseppe@mail',
+                'name' => 'danio',
+                'email' => 'danio@mail',
                 'password' => Hash::make('12345678'),
             ],
-            [
-                'name' => 'Giorgio',
-                'email' => 'giorgio@mail',
-                'password' => Hash::make('12345678'),
-            ]
         ];
 
         foreach ($array_users as $user) {

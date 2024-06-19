@@ -87,9 +87,9 @@
               @endguest
 
               @auth
-              {{-- <li class="nav-item ps-4 border-bottom">
-                <a class="nav-link my-2 position-relative  link_custom" aria-current="page" href="{{route('profil', compact('user'))}}">Profilo</a>
-              </li> --}}
+              <li class="nav-item ps-4 border-bottom">
+                <a class="nav-link my-2 position-relative  link_custom" aria-current="page" href="{{route('profil')}}">Profilo</a>
+              </li>
               <li class="nav-item"><form
                 class="d-flex"
                 method="POST"

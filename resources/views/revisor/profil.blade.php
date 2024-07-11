@@ -1,4 +1,5 @@
 <x-layout>
+
     <div class="container mt-5 justify-content-center vh-100">
         <div class="row justify-content-center align-items-center ">
             <h3 class="display-3 text-center">{{$user->name}}</h3>

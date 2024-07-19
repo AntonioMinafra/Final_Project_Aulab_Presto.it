@@ -67,7 +67,7 @@ class CreateAnnouncements extends Component
 
         if (count($this->images)) {
             foreach ($this->images as $image) {
-                $newFileName = "announcements/{$announcement->id}";
+                $newFileName = "announcements";
                 $newImage = $announcement->images()->create(['path' => $image->store($newFileName, 'public')]);
                 }
 

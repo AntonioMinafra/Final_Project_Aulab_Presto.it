@@ -17,7 +17,7 @@
                       @foreach ($announcement->images as $image)
 
                       <div class="swiper-slide">
-                        <img src="{{$image->getUrl(300,300)}}"/>
+                        <img src="{{$image}}"/>
                       </div>
 
                       @endforeach

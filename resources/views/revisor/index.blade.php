@@ -1,9 +1,9 @@
 <x-layout>
-    
+
     <x-message/>
-    
+
     <x-error/>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-12 mt-5">
@@ -15,7 +15,7 @@
             </div>
         </div>
     </div>
-    
+
     @if($announcements)
     <div class="container my-5">
         <div class="row">
@@ -27,7 +27,7 @@
                             <th class="riga_body" scope="col">{{__('ui.title')}}</th>
                             <th class="riga_body" scope="col">{{__('ui.price')}}</th>
                             <th class="riga_body" scope="col">{{__('ui.creation')}}</th>
-                            <th class="riga_body" scope="col">Elementi foto</th>
+                            {{-- <th class="riga_body" scope="col">Elementi foto</th> --}}
                             <th class="riga_body" scope="col">Controllo immagini</th>
                             <th class="riga_body" scope="col"></th>
                             <th class="riga_body" scope="col"></th>
@@ -41,14 +41,14 @@
                             <td>{{$announcement->title}}</td>
                             <td>{{$announcement->price}}$</td>
                             <td>{{\Carbon\Carbon::parse($announcement->created_at)->format('d/m/Y') }}</td>
-                            <td>
+                            {{-- <td>
                                 @foreach ($announcement->images as $image)
                                 @if ($image->labels)
                                 <div class="dropdown mb-2">
                                     <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        
+
                                         Elementi foto
-                                        
+
                                     </button>
                                     <ul class="dropdown-menu">
                                         @foreach ($image->labels as $label)
@@ -57,14 +57,14 @@
                                     </div>
                                     @endif
                                     @endforeach
-                                </td>
-                                <td>
+                                </td> --}}
+                                {{-- <td>
                                     @foreach ($announcement->images as $image)
                                     <div class="dropdown mb-2">
                                         <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            
+
                                             Stato foto
-                                            
+
                                         </button>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-item"><div class="me-3 ">Adulti <span accordion class="{{$image->adult}} ms-1"></span></div></li>
@@ -75,7 +75,7 @@
                                         </ul>
                                     </div>
                                     @endforeach
-                                </td>
+                                </td> --}}
                                 <td class="riga_body">
                                     <a href="{{route('show.announcements', ['announcement' => $announcement['id']])}}" class="btn bottone_annuncio3 d-block mx-auto"><i class="bi bi-eye"></i></a>
                                 </td>
@@ -101,8 +101,8 @@
             </div>
         </div>
         @endif
-        
-        
+
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -152,7 +152,7 @@
             </div>
         </div>
         @endif
-        
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -202,6 +202,6 @@
             </div>
         </div>
         @endif
-        
-        
+
+
     </x-layout>

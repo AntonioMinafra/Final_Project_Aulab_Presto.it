@@ -9,12 +9,12 @@
                         NEW
                       </span>
                     @if (count($announcement->images))
-                    
-                    <img src="{{$announcement->images->first()->getUrl(300,300)}}" class="card-img-top shadow" alt="...">
-                    
+
+                    <img src="{{$announcement->images}}" class="card-img-top shadow" alt="...">
+
                     @else
                     <img src="{{Storage::url('public/img/default-image.jpg')}}" class="card-img-top shadow" alt="...">
-                    
+
                     @endif
                     <div class="card-body d-flex flex-column justify-content-between">
                         <div>
@@ -31,5 +31,5 @@
             @endforeach
         </div>
     </div>
-    
+
 </div>

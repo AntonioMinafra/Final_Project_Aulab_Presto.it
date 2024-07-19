@@ -17,7 +17,7 @@
                       @foreach ($announcement->images as $image)
 
                       <div class="swiper-slide">
-                        <img src="{{Storage::url($announcement->images->first()->path)}}"/>
+                        <img src="{{Storage::url($image->path)}}"/>
                       </div>
 
                       @endforeach

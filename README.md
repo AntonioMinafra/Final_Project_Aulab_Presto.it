@@ -1,6 +1,6 @@
 # Final_Project_Aulab_Presto.it
 
-  <video width="640" height="360" controls>
+  <video controls>
         <source src="./assets/video_masthead.mp4" type="video/mp4">
   </video>
 

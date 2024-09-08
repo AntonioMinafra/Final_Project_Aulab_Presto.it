@@ -1,8 +1,8 @@
 # Final_Project_Aulab_Presto.it
 
-  <video controls>
-        <source src="./assets/video_masthead.mp4" type="video/mp4">
-  </video>
+
+https://github.com/user-attachments/assets/20e3e80a-2430-4a25-8672-eb1a734ef788
+
 
 <p>This e-commerce project was developed during the Aulab bootcamp. The goal was to create an online sales platform that allows users to browse products. The project includes features for both end users (customers) and site administrators.</p>
 

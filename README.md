@@ -1,5 +1,9 @@
 # Final_Project_Aulab_Presto.it
 
+  <video width="640" height="360" controls>
+        <source src="./assets/video_masthead.mp4" type="video/mp4">
+  </video>
+
 <p>This e-commerce project was developed during the Aulab bootcamp. The goal was to create an online sales platform that allows users to browse products. The project includes features for both end users (customers) and site administrators.</p>
 
 - Functionality

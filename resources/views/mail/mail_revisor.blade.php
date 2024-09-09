@@ -6,18 +6,7 @@
   <meta name="x-apple-disable-message-reformatting">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta content="telephone=no" name="format-detection">
-  <title>Nuovo messaggio</title><!--[if (mso 16)]>
-    <style type="text/css">
-    a {text-decoration: none;}
-    </style>
-    <![endif]--><!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]--><!--[if gte mso 9]>
-<xml>
-    <o:OfficeDocumentSettings>
-    <o:AllowPNG></o:AllowPNG>
-    <o:PixelsPerInch>96</o:PixelsPerInch>
-    </o:OfficeDocumentSettings>
-</xml>
-<![endif]-->
+  <title>Nuovo messaggio</title>
   <style type="text/css">
 #outlook a {
 	padding:0;
@@ -144,7 +133,7 @@ a[x-apple-data-detectors] {
           <td align="center" style="padding:0;Margin:0">
            <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0" cellspacing="0" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px">
              <tr>
-              <td align="left" style="padding:0;Margin:0;padding-left:20px;padding-right:20px;padding-top:40px"><!--[if mso]><table style="width:560px" cellpadding="0" cellspacing="0"><tr><td style="width:360px" valign="top"><![endif]-->
+              <td align="left" style="padding:0;Margin:0;padding-left:20px;padding-right:20px;padding-top:40px">
                <table cellpadding="0" cellspacing="0" class="es-left" align="left" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
                  <tr>
                   <td class="es-m-p0r es-m-p20b" valign="top" align="center" style="padding:0;Margin:0;width:360px">
@@ -154,7 +143,7 @@ a[x-apple-data-detectors] {
                      </tr>
                    </table></td>
                  </tr>
-               </table><!--[if mso]></td><td style="width:20px"></td><td style="width:180px" valign="top"><![endif]-->
+               </table>
                <table class="es-right" cellpadding="0" cellspacing="0" align="right" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
                  <tr>
                   <td align="left" style="padding:0;Margin:0;width:180px">
@@ -164,7 +153,7 @@ a[x-apple-data-detectors] {
                      </tr>
                    </table></td>
                  </tr>
-               </table><!--[if mso]></td></tr></table><![endif]--></td>
+               </table></td>
              </tr>
            </table></td>
          </tr>
@@ -243,27 +232,3 @@ a[x-apple-data-detectors] {
   </div>
  </body>
 </html>
-
-
-
-
-{{-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-
-    <h1>Un utente ha chiesto di lavorare con noi</h1>
-    <h2>Ecco i suoi dati:  </h2>
-    <p>Nome: {{$user->name}}</p>
-    <p>Email: {{$user->email}}</p>
-    <p>Descrizione: {{$body}}</p>
-    <p>Se vuoi renderlo un revisore clicca qui:</p>
-    <a href="{{route('make.revisor', compact('user'))}}">Rendi revisore</a>
-    
-</body>
-</html> --}}

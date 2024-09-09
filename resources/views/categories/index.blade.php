@@ -2,12 +2,14 @@
 
     <x-masthead />
 
-    {{-- @dd($category) --}}
     @if ($announcements->isEmpty())
+
     <div class="messaggio_category">
         <h3 class="text-center mt-5 mb-5">{{__('ui.noCategory')}}</h3>
     </div>
+
     @else
+
     <div class="container ">
         <div class="row mt-5 justify-content-center">
             <h2 class="my_title text-center">{{__("ui.$category->name")}}</h2>

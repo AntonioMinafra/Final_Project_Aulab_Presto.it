@@ -1,7 +1,7 @@
 # Final_Project_Aulab_Presto.it
 
 
-https://github.com/user-attachments/assets/20e3e80a-2430-4a25-8672-eb1a734ef788
+https://github.com/user-attachments/assets/9f53bbe0-ad79-43f7-b848-58119f129830
 
 
 <p>This e-commerce project was developed during the Aulab bootcamp. The goal was to create an online sales platform that allows users to browse products. The project includes features for both end users (customers) and site administrators.</p>
@@ -12,6 +12,10 @@ https://github.com/user-attachments/assets/20e3e80a-2430-4a25-8672-eb1a734ef788
     * Administrator Dashboard: Administrators can add, edit and remove products, manage orders and view sales statistics.
 
 - Used technologies
+
+
+
+
 
 <hr />
     Front-end:
